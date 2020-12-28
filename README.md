@@ -12,9 +12,30 @@ Created in collaboration with [Unnikrishnan Menon](https://github.com/7enTropy7)
 * **Encrypt:** <a href="https://shlappas.com/github-math/#c\equiv%20m^e\mod%20n" target="_blank"><img src="https://render.githubusercontent.com/render/math?math=c\equiv%20m^e\mod%20n" title="c\equiv m^e\mod n" /></a>
 * **Decrypt:** <a href="https://shlappas.com/github-math/#m\equiv%20c^d\mod%20n" target="_blank"><img src="https://render.githubusercontent.com/render/math?math=m\equiv%20c^d\mod%20n" title="m\equiv c^d\mod n" /></a>
 
-![image](https://user-images.githubusercontent.com/7680591/59566357-3a722d00-902d-11e9-991c-b67e5f369722.png)
+| Message | H| e | l | l | o |
+| --- | --- | --- | --- | --- | --- |
+| ASCII Code | 72 | 101 | 108 | 108 | 111 |
+| <a href="https://shlappas.com/github-math/#p%3D11%2C%20q%3D13" target="_blank"><img src="https://render.githubusercontent.com/render/math?math=p%3D11%2C%20q%3D13" title="p,q" /><br/><a href="https://shlappas.com/github-math/#n%3D143" target="_blank"><img src="https://render.githubusercontent.com/render/math?math=n%3D143" title="n" /><br/><a href="https://shlappas.com/github-math/#\phi(n)%3D120" target="_blank"><img src="https://render.githubusercontent.com/render/math?math=\phi(n)%3D120" title="\phi(n)" /><br/><a href="https://shlappas.com/github-math/#e%3D77" target="_blank"><img src="https://render.githubusercontent.com/render/math?math=e%3D77" title="e" /><br/><a href="https://shlappas.com/github-math/#d%3D53" target="_blank"><img src="https://render.githubusercontent.com/render/math?math=d%3D53" title="d" /> | | | | | |
+| **Encrypt:** <a href="https://shlappas.com/github-math/#c\equiv%20m^e\mod%20n" target="_blank"><img src="https://render.githubusercontent.com/render/math?math=c\equiv%20m^e\mod%20n" title="c\equiv m^e\mod n" /> | 63 | 95 | 114 | 114 | 89 |
+| **Decrypt:** <a href="https://shlappas.com/github-math/#m\equiv%20c^d\mod%20n" target="_blank"><img src="https://render.githubusercontent.com/render/math?math=m\equiv%20c^d\mod%20n" title="m\equiv c^d\mod n" /> | 72 | 101 | 108 | 108 | 111 |
+| Decrypted Message | H | e | l | l | o |
 
 And this is what a code says….
-![rsa](https://user-images.githubusercontent.com/7680591/59566011-0e07e200-9028-11e9-9f54-449d0ff23a28.jpg)
+
+```shell
+> python RSA_Python.py
+Enter bit_length: 4
+Running RSA...
+Generating public/private keypair...
+353 137
+Public Key:  (9651, 48361)
+Private Key:  (32123, 48361)        
+Write msg: Hello
+[72, 101, 108, 108, 111] 
+Encrypted msg:
+3048825169461814618124754
+Decrypted msg:
+Hello
+```
 
 Note that you may have to setup an external dependency environment in some cases, it would create a big chunk of files that are not here due to exceeding the maximum number of files to upload.
